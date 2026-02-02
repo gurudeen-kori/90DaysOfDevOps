@@ -7,15 +7,25 @@ touch notes.txt
 
 # Write text to the file (overwrites if file exists)
 ```bash
-echo "Hello, this is the first line." > `notes.txt`
-echo "This is the second line." >> `notes.txt`
+echo "Hello, this is the first line." > notes.txt
+echo "This is the second line." >> notes.txt
 ```
 # Append new lines to the file
 ``` bash
-echo "This line is appended." >> notes.txt
-echo "Another appended line." >> notes.txt
+echo "This line is line 2." >> notes.txt
+echo "this is  line 3." >> notes.txt
+
+```
+# view content in notes.txt 
+```bash
+head -2 notes.txt
+tail -2 notes.txt
 ```
 
+# tee command 
+```bash
+tee -a notes.txt
+```
 ```bash
 # Display the content of the file
 cat notes.txt
@@ -26,8 +36,4 @@ more notes.txt   # Scroll page by page
 
 ```
 
-# view content in notes.txt 
-```bash
-head -2 notes.txt
-tail -2 notes.txt
-```
+
