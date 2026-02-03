@@ -9,7 +9,9 @@ This structure helps maintain consistency across Linux distributions.
 ## Root Directory `/`
 
 The root directory is the top-most directory in Linux.
+
 All files, directories, and devices originate from `/`.
+
 Without the root filesystem, Linux cannot function.
 ```
   /
@@ -39,128 +41,128 @@ Without the root filesystem, Linux cannot function.
 ## Directory Descriptions
 
 ### `/bin` — Binary Executables
-This directory contains essential command-line programs required by all users.
-Commands like `ls`, `cp`, `mv`, `cat`, and `echo` are stored here.
-These binaries are necessary for basic system operation, even in recovery mode.
+- This directory contains essential command-line programs required by all users.
+- Commands like `ls`, `cp`, `mv`, `cat`, and `echo` are stored here.
+- These binaries are necessary for basic system operation, even in recovery mode.
 
 ---
 
 ### `/boot` — Boot Loader Files
-The `/boot` directory contains files required to start the Linux system.
-This includes the Linux kernel, initial RAM disk (`initrd`), and bootloader files.
-Without these files, the system cannot boot.
+- The `/boot` directory contains files required to start the Linux system.
+- This includes the Linux kernel, initial RAM disk (`initrd`), and bootloader files.
+- Without these files, the system cannot boot.
 
 ---
 
 ### `/dev` — Device Files
-This directory contains special files that represent hardware devices.
-Hard drives, USB devices, terminals, and printers appear as files here.
-The kernel communicates with hardware through these device files.
+- This directory contains special files that represent hardware devices.
+- Hard drives, USB devices, terminals, and printers appear as files here.
+- The kernel communicates with hardware through these device files.
 
 ---
 
 ### `/etc` — Configuration Files
-The `/etc` directory stores system-wide configuration files.
-These files control system behavior, services, networking, and user settings.
-Most files here are plain text and can be edited by administrators.
+- The `/etc` directory stores system-wide configuration files.
+- These files control system behavior, services, networking, and user settings.
+- Most files here are plain text and can be edited by administrators.
 
 ---
 
 ### `/home` — User Home Directories
-Each normal user has a personal directory inside `/home`.
-It contains user files such as documents, downloads, and personal settings.
-Permissions ensure users cannot access each other’s data by default.
+- Each normal user has a personal directory inside `/home`.
+- It contains user files such as documents, downloads, and personal settings.
+- Permissions ensure users cannot access each other’s data by default.
 
 ---
 
 ### `/lib` — Essential Shared Libraries
-This directory contains shared libraries needed by essential system binaries.
-Programs in `/bin` and `/sbin` depend on these libraries to run.
-Without `/lib`, many basic commands would fail to execute.
+- This directory contains shared libraries needed by essential system binaries.
+- Programs in `/bin` and `/sbin` depend on these libraries to run.
+- Without `/lib`, many basic commands would fail to execute.
 
 ---
 
 ### `/lib64` — 64-bit Libraries
-On 64-bit systems, `/lib64` stores 64-bit shared libraries.
-It separates 64-bit libraries from 32-bit ones for compatibility.
-This ensures proper execution of 64-bit applications.
+- On 64-bit systems, `/lib64` stores 64-bit shared libraries.
+- It separates 64-bit libraries from 32-bit ones for compatibility.
+- This ensures proper execution of 64-bit applications.
 
 ---
 
 ### `/media` — Removable Media
-The `/media` directory is used for mounting removable devices.
-USB drives, CDs, and DVDs are automatically mounted here.
-Each device usually gets its own subdirectory.
+- The `/media` directory is used for mounting removable devices.
+- USB drives, CDs, and DVDs are automatically mounted here.
+- Each device usually gets its own subdirectory.
 
 ---
 
 ### `/mnt` — Temporary Mount Point
-This directory is traditionally used for manual or temporary mounts.
-System administrators often mount filesystems here for maintenance.
-Unlike `/media`, it is not usually used for automatic mounting.
+- This directory is traditionally used for manual or temporary mounts.
+- System administrators often mount filesystems here for maintenance.
+- Unlike `/media`, it is not usually used for automatic mounting.
 
 ---
 
 ### `/opt` — Optional Software
-The `/opt` directory contains optional or third-party software.
-Applications installed here are usually self-contained.
-This keeps them separate from system-managed software.
+- The `/opt` directory contains optional or third-party software.
+- Applications installed here are usually self-contained.
+- This keeps them separate from system-managed software.
 
 ---
 
 ### `/proc` — Process Information
-`/proc` is a virtual filesystem created in memory.
-It provides real-time information about running processes and the kernel.
-Files here do not exist on disk but are generated dynamically.
+- `/proc` is a virtual filesystem created in memory.
+- It provides real-time information about running processes and the kernel.
+- Files here do not exist on disk but are generated dynamically.
 
 ---
 
 ### `/root` — Root User Home
-This is the home directory for the root (administrator) user.
-It is separate from `/home` for security and system integrity.
-Only the root user can access this directory.
+- This is the home directory for the root (administrator) user.
+- It is separate from `/home` for security and system integrity.
+- Only the root user can access this directory.
 
 ---
 
 ### `/run` — Runtime Data
-The `/run` directory stores temporary runtime data.
-It includes process ID files, sockets, and system state information.
-Data here is cleared on system reboot.
+- The `/run` directory stores temporary runtime data.
+- It includes process ID files, sockets, and system state information.
+- Data here is cleared on system reboot.
 
 ---
 
 ### `/sbin` — System Binaries
-This directory contains administrative commands for system management.
-Utilities like `fsck`, `mount`, and `reboot` are stored here.
-These commands are typically used by the root user.
+- This directory contains administrative commands for system management.
+- Utilities like `fsck`, `mount`, and `reboot` are stored here.
+- These commands are typically used by the root user.
 
 ---
 
 ### `/srv` — Service Data
-The `/srv` directory holds data for system services.
-For example, web server or FTP server data may be stored here.
-It separates service data from configuration and binaries.
+- The `/srv` directory holds data for system services.
+- For example, web server or FTP server data may be stored here.
+- It separates service data from configuration and binaries.
 
 ---
 
 ### `/sys` — System Information
-`/sys` is a virtual filesystem similar to `/proc`.
-It provides information about devices, drivers, and kernel features.
-System administrators use it to interact with hardware settings.
+- `/sys` is a virtual filesystem similar to `/proc`.
+- It provides information about devices, drivers, and kernel features.
+- System administrators use it to interact with hardware settings.
 
 ---
 
 ### `/tmp` — Temporary Files
-This directory stores temporary files created by applications.
-Files here are usually deleted automatically on reboot.
-All users can write to `/tmp`, but with restricted permissions.
+- This directory stores temporary files created by applications.
+- Files here are usually deleted automatically on reboot.
+- All users can write to `/tmp`, but with restricted permissions.
 
 ---
 
 ### `/usr` — User Programs and Data
-The `/usr` directory contains user-level applications and utilities.
-It includes binaries, libraries, documentation, and shared resources.
-Most installed software resides under `/usr`.
+- The `/usr` directory contains user-level applications and utilities.
+- It includes binaries, libraries, documentation, and shared resources.
+- Most installed software resides under `/usr`.
 
 /usr
 ├── bin
@@ -172,9 +174,9 @@ Most installed software resides under `/usr`.
 ---
 
 ### `/var` — Variable Data
-The `/var` directory stores data that changes frequently.
-This includes logs, mail queues, caches, and spool files.
-It grows dynamically as the system runs.
+- The `/var` directory stores data that changes frequently.
+- This includes logs, mail queues, caches, and spool files.
+- It grows dynamically as the system runs.
 
 /var
 ├── log
@@ -204,8 +206,8 @@ It grows dynamically as the system runs.
 # Scenario 01: A Directory Is Taking Too Much Space
 
 ## Problem Statement
-A directory on a Linux system is consuming excessive disk space.
-The goal is to analyze the directory, identify what is using the space,
+- A directory on a Linux system is consuming excessive disk space.
+- The goal is to analyze the directory, identify what is using the space,
 and determine possible cleanup actions without affecting system stability.
 
 ---
@@ -328,4 +330,5 @@ Recheck disk usage:
 
 df -h
 The freed space should now be visible.
+
 
