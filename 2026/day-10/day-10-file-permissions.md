@@ -9,25 +9,26 @@
 - script.sh  
 - trainwithsubham
 ---
+---
 ## Permission Changes
 # [before]
 total 8
-drwxr-xr-x. 5 root root 52 Jan 29 23:20 `demo`
--r--r--r--. 1 root root  0 Feb  4 21:49 `devops.txt`
-drwxr-xr-x. 3 root root 18 Jan 27 16:15 `gurudeen`
--rw-r--r--. 1 root root 22 Feb  4 21:50 `notes.txt`
--rwxr-xr-x. 1 root root 21 Feb  4 21:51 `script.sh`
-drwxr-xr-x. 3 root root 28 Jan 29 21:59 `trainwithsubham`
+- drwxr-xr-x. 5 root root 52 Jan 29 23:20 `demo`
+- -r--r--r--. 1 root root  0 Feb  4 21:49 `devops.txt`
+- drwxr-xr-x. 3 root root 18 Jan 27 16:15 `gurudeen`
+- -rw-r--r--. 1 root root 22 Feb  4 21:50 `notes.txt`
+- -rwxr-xr-x. 1 root root 21 Feb  4 21:51 `script.sh`
+- drwxr-xr-x. 3 root root 28 Jan 29 21:59 `trainwithsubham`
 
 # [after for each file]
 total 12
-drwxr-xr-x. 5 root root 52 Jan 29 23:20 `demo`
--r--r--r--. 1 root root  7 Feb  4 22:21 `devops.txt`
-drwxr-xr-x. 3 root root 18 Jan 27 16:15 `gurudeen`
--rw-r-----. 1 root root 22 Feb  4 21:50 `notes.txt`
-drwxr-xr-x. 2 root root  6 Feb  4 22:25` project`
--rwxr-xr-x. 1 root root 21 Feb  4 21:51 `script.sh`
-drwxr-xr-x. 3 root root 28 Jan 29 21:59 `trainwithsubham`
+- drwxr-xr-x. 5 root root 52 Jan 29 23:20 `demo`
+- -r--r--r--. 1 root root  7 Feb  4 22:21 `devops.txt`
+- drwxr-xr-x. 3 root root 18 Jan 27 16:15 `gurudeen`
+- -rw-r-----. 1 root root 22 Feb  4 21:50 `notes.txt`
+- drwxr-xr-x. 2 root root  6 Feb  4 22:25` project`
+- -rwxr-xr-x. 1 root root 21 Feb  4 21:51 `script.sh`
+- drwxr-xr-x. 3 root root 28 Jan 29 21:59 `trainwithsubham`
 
 ```bash
 ## Commands Used
@@ -71,4 +72,5 @@ touch devops.txt
 - modification of file like append with` >,>>,2> and 2>>`
 - view the content in files and using these command `head,tail,vim and cat etc.`
 - understand the `default permission, special permissions and acls(access control list )`
+
 - 
