@@ -95,7 +95,7 @@ hostname -I
 ```
 ## output 
 
-![Network Diagram](hostname-i.png)
+![Network Diagram](hostname -i.png)
 
 # Observation (1–2 lines)
 
@@ -106,7 +106,7 @@ ping -c 4 google.com
 
 Output
 
-![Network Diagram](ping-c.png)
+![Network Diagram](ping -c.png)
 
 # 3️⃣ Path (Routing Visibility)
 Command
@@ -130,3 +130,4 @@ nslookup google.com
 Output
 
 ![Network Diagram](nslookup1.png)
+
