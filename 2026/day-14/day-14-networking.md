@@ -94,29 +94,39 @@ You can replace it with your lab server or internal service.
 hostname -I
 ```
 ## output 
-![Network Diagram](hostname -i.png)
+
+![Network Diagram](hostname-i.png)
 
 # Observation (1–2 lines)
 
 # 2️⃣ Reachability
 Command
+
 ping -c 4 google.com 
 
 Output
-![Network Diagram](ping -c.png)
+
+![Network Diagram](ping-c.png)
+
 # 3️⃣ Path (Routing Visibility)
 Command
+---
 traceroute google.com
 # output 
 ![Network Diagram](traceroutegoogle.png)
+---
 # 4️⃣ Ports (Listening Services)
 Command
+
 ss -tulpn
 # output
 ![Network Diagram](ss-tulpn.png)
 # 5️⃣ Name Resolution
+
 Command
+
 nslookup google.com
 
 Output
+
 ![Network Diagram](nslookup1.png)
