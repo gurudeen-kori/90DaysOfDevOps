@@ -158,6 +158,13 @@ output
 
 ![Alt text](system.png)
 
+---
+- today i have enhanced shell scripting skills like functions in shell scripting.
+-  what is function,its declaration and call the fuction  
+- view disk information through shell script and commands
+- system  reports like os name, uptime,disk uasage ,memory usage and cpu through scripting  
+
+
 
 
 
