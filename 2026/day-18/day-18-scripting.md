@@ -20,7 +20,7 @@ greet "$np"
 add "$num1" "$num2"
 ```
 # output
-![Alt text]("student-2026-02-16-16-30-49")
+![Alt text]("function")
 
 # disk_check.sh
 ```bash 
@@ -48,7 +48,7 @@ check_memory
 ```
 output
 
-![Alt text]("student-2026-02-16-16-29-32")
+![Alt text]("disk.png")
 
 # local_variable 
 ```bash
@@ -88,7 +88,7 @@ echo "Outside after greet_global: $name, $message"
 
 ```
 output
-![Alt text]("student-2026-02-16-16-35-40")
+![Alt text]("local.png")
 
 # system_info.sh
 
@@ -156,6 +156,7 @@ main
 ```
 output
 
-![Alt text]("student-2026-02-16-16-28-42")
+![Alt text]("system.png")
+
 
 
