@@ -20,7 +20,7 @@ greet "$np"
 add "$num1" "$num2"
 ```
 # output
-![Alt text]("function")
+![Alt text]("function.png")
 
 # disk_check.sh
 ```bash 
@@ -157,6 +157,7 @@ main
 output
 
 ![Alt text]("system.png")
+
 
 
 
