@@ -56,7 +56,7 @@ Run the following command in the same directory:
 ```bash
 docker build -t my-ubuntu:v1 .
 ```
-![Alt Text](build.png)
+![Alt Text](build1.png)
 ![Alt Text](build2.png)
 Explanation:
 
@@ -468,6 +468,7 @@ docker run -d -p 8080:80 my-website:v1
 
 Step 5: Verify in Browser
 http://http://43.204.219.158:80
+
 
 
 
