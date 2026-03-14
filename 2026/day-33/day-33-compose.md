@@ -73,7 +73,7 @@ Open browser and go to:
 http://localhost:8080
 ```
 # output
-![My Image](ngins.png)
+![My Image](nginx.png)
 
 # Task 3: Two-Container Setup
 Write a docker-compose.yml that runs:
