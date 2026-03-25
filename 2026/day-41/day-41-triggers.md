@@ -9,7 +9,7 @@
 0 9 * * 1
 ```
 ### Task 3: Manual Trigger
-![Matrix Jobs](./images/matrix.png)
+![Matrix Jobs](manual.png)
 
 ### Task 4: Matrix Builds
-![Matrix Jobs](matrix.png)
+![Matrix Jobs](metrix.png)
