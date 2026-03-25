@@ -1,0 +1,22 @@
+name: schedule
+
+on: 
+  schedule:
+    - cron: "50 15 * * *"
+  workflow_dispatch:   # optional (manual run button)
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello user 
+        run: echo "hello this is $USER"
+
+      - name: create folder 
+        run: mkdir $USER
+
+  os_information:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print os info
+        run: cat /etc/os-release

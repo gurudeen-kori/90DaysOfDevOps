@@ -1,0 +1,19 @@
+name: manual trigger
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Choose environment"
+        required: true
+        type: choice
+        options:
+          - staging
+          - production
+
+jobs:
+  print-env:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print environment
+        run: echo "Selected environment is ${{ github.event.inputs.environment }}"

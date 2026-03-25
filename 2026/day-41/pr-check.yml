@@ -1,0 +1,12 @@
+name: pr-check
+on: 
+  pull_request:
+    branches: [main]
+
+jobs:
+
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: this is checking for autometically runs when pull_request opened
+        run: uname 
