@@ -5,6 +5,7 @@
 
 ### Task 2: Scheduled Trigger
 ![Manual Run](schedule.png)
+## for every monday
 ```
 0 9 * * 1
 ```
