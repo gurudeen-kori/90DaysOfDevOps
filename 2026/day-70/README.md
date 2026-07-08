@@ -24,7 +24,7 @@ Create `variables-demo.yml`:
 ---
 - name: Variable demo
   hosts: all
-  become: true
+  become: yes
 
   vars:
     app_name: terraweek-app
