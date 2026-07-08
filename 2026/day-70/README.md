@@ -47,7 +47,7 @@ Create `variables-demo.yml`:
         mode: '0755'
 
     - name: Install required packages
-      yum:
+      apt:
         name: "{{ packages }}"
         state: present
 ```
