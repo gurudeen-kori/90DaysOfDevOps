@@ -107,6 +107,8 @@ helm search repo bitnami/mysql
 **Deploy MySQL with the same config the AI-BankApp expects:**
 ```bash
 helm install bankapp-mysql bitnami/mysql \
+  --set image.repository=bitnamilegacy/mysql \
+  --set image.tag=9.4.0-debian-12-r1 \
   --set auth.rootPassword=Test@123 \
   --set auth.database=bankappdb \
   --set primary.resources.requests.memory=256Mi \
